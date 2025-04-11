@@ -12,14 +12,15 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #1A1E36; /* Azul oscuro como fondo */
+            font-size: 16px;
+            background-color: #080b1d; /* Azul oscuro como fondo */
             color: white; /* Texto en blanco para contraste */
         }
 
         .navbar {
-            background-color: #1A1E36; /* Mismo azul para la barra de navegación */
+            background-color: #080b1d; /* Mismo azul para la barra de navegación */
             color: white;
-            padding: 10px;
+            padding: 10px;  
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -95,7 +96,7 @@
         }
 
         .cart, .about, .locations {
-            background-color: #1A1E36; /* Fondo azul para estas secciones */
+            background-color: #080b1d; /* Fondo azul para estas secciones */
             padding: 20px;
             margin-top: 20px;
             text-align: center;
@@ -149,7 +150,7 @@
         }
 
         .product-card p {
-            color: #1A1E36; /* Mismo color para el texto */
+            color: #080b1d; /* Mismo color para el texto */
         }
 
         .form-input {
@@ -184,7 +185,7 @@
         }
 
         .login-section, .payment-section {
-            background-color: #1A1E36;
+            background-color: #080b1d;
             color: white;
             padding: 20px;
             text-align: center;
@@ -245,23 +246,7 @@
     </style>
 </head>
 <body>
-    <header>
 
-        <script>
-              var _paq = window._paq = window._paq || [];
-             _paq.push(['trackPageView']);
-              _paq.push(['enableLinkTracking']);
-              (function() {
-                var u="https://hydromax.matomo.cloud/";
-                _paq.push(['setTrackerUrl', u+'matomo.php']);
-                 _paq.push(['setSiteId', '1']);
-                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                g.async=true; g.src='https://cdn.matomo.cloud/hydromax.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-              })();
-        </script>
-
-     <header>
-         
     <div class="navbar">
         <h1><b>HYDROMAX<b></h1>
         <nav>
@@ -269,6 +254,8 @@
             <a href="#locations">Locations</a>
             <a href="#about">Who We Are</a>
             <a href="#cart">Cart</a>
+            <a href="#FaQ">FaQ</a>
+            <a href="#Terms Of Use">ToU</a>
         </nav>
        
     </div>
@@ -276,63 +263,63 @@
     <!-- Products Section -->
     <div id="products" class="product-list">
         <div class="product-card">
-            <img src="https://drinkprime.com/cdn/shop/files/Berry-Freeze-Front_1_200x.png?v=1730302649" alt="Product 1">
+            <img src="https://drinkprime.com/cdn/shop/files/Berry-Freeze-Front_1_200x.png?v=1730302649" alt="Product 1" style="width: 200px; height: 200px;">
             <h3>Berry Freeze 12/PK</h3>
             <p>$35.00</p>
             <p>Berry Freeze 12/PK</p>
             <button onclick="addToCart('Berry Freeze 12/PK', 35)">Add to Cart</button>
         </div>
         <div class="product-card">
-            <img src="https://drinkprime.com/cdn/shop/files/GB_Product_Page_-_Front_200x.png?v=1722366864" alt="Product 2">
+            <img src="https://drinkprime.com/cdn/shop/files/GB_Product_Page_-_Front_200x.png?v=1722366864" alt="Product 2" style="width: 200px; height: 200px;">
             <h3>Glowberry 12/PK</h3>
             <p>$35.00</p>
             <p>Glowberry 12/PK</p>
             <button onclick="addToCart('Glowberry 12/PK', 35)">Add to Cart</button>
         </div>
         <div class="product-card">
-            <img src="https://drinkprime.com/cdn/shop/files/Speed-Bottle-Front_b2fe6348-b16b-4582-b0fb-c2f3efcc2bc5_200x.png?v=1727210047" alt="Product 3">
+            <img src="https://drinkprime.com/cdn/shop/files/Speed-Bottle-Front_b2fe6348-b16b-4582-b0fb-c2f3efcc2bc5_200x.png?v=1727210047" alt="Product 3" style="width: 200px; height: 200px;">
             <h3>ISHOWSPEED 12/PK</h3>
             <p>$35.00</p>
             <p>ISHOWSPEED 12/PK</p>
             <button onclick="addToCart('ISHOWSPEED 12/PK', 35)">Add to Cart</button>
         </div>
         <div class="product-card">
-            <img src="https://drinkprime.com/cdn/shop/files/SBHydrationFront_200x.png?v=1708725252" alt="Product 4">
+            <img src="https://drinkprime.com/cdn/shop/files/SBHydrationFront_200x.png?v=1708725252" alt="Product 4" style="width: 200px; height: 200px;">
             <h3>Strawberry Banana 12/PK</h3>
             <p>$35.00</p>
             <p>Strawberry Banana 12/PK</p>
             <button onclick="addToCart('Strawberry Banana 12/PK', 35)">Add to Cart</button>
         </div>
         <div class="product-card">
-            <img src="https://drinkprime.com/cdn/shop/files/PrimeX_Web_ProductPage_Blue_Front_94b506ea-f8d6-439e-8764-19173ba4baa5_200x.png?v=1717432079" alt="Product 5">
+            <img src="https://drinkprime.com/cdn/shop/files/PrimeX_Web_ProductPage_Blue_Front_94b506ea-f8d6-439e-8764-19173ba4baa5_200x.png?v=1717432079" alt="Product 5" style="width: 200px; height: 200px;">
             <h3>X 12/PK</h3>
             <p>$35.00</p>
             <p>X 12/PK</p>
             <button onclick="addToCart('X 12/PK', 35)">Add to Cart</button>
         </div>
         <div class="product-card">
-            <img src="https://drinkprime.com/cdn/shop/products/PrimeHydration_1serve_IcePop_0000_200x.png?v=1656076690" alt="Product 6">
+            <img src="https://drinkprime.com/cdn/shop/products/PrimeHydration_1serve_IcePop_0000_200x.png?v=1656076690" alt="Product 6" style="width: 200px; height: 200px;">
             <h3>Ice Pop 12/PK</h3>
             <p>$35.00</p>
             <p>Ice Pop 12/PK</p>
             <button onclick="addToCart('Ice Pop 12/PK', 35)">Add to Cart</button>
         </div>
         <div class="product-card">
-            <img src="https://drinkprime.com/cdn/shop/files/DreamPopFront_400x.png?v=1716568606" alt="Product 7">
+            <img src="https://drinkprime.com/cdn/shop/files/DreamPopFront_400x.png?v=1716568606" alt="Product 7" style="width: 200px; height: 200px;">
             <h3>Dream Pop 12/PK</h3>
             <p>$35.00</p>
             <p>Dream Pop 12/PK</p>
             <button onclick="addToCart('Dream Pop 12/PK', 35)">Add to Cart</button>
         </div>
         <div class="product-card">
-            <img src="https://drinkprime.com/cdn/shop/files/Original-Front_400x.png?v=1695912906" alt="Product 8">
+            <img src="https://drinkprime.com/cdn/shop/files/Original-Front_400x.png?v=1695912906" alt="Product 8" style="width: 200px; height: 200px;">
             <h3>Original 12/PK</h3>
             <p>$35.00</p>
             <p>Original 12/PK</p>
             <button onclick="addToCart('Original 12/PK', 35)">Add to Cart</button>
         </div>
         <div class="product-card">
-            <img src="https://drinkprime.com/cdn/shop/files/PRIME_energy_1serve_IcePop_0000_400x.png?v=1697573703" alt="Product 9">
+            <img src="https://drinkprime.com/cdn/shop/files/PRIME_energy_1serve_IcePop_0000_400x.png?v=1697573703" alt="Product 9" style="width: 200px; height: 200px;">
             <h3>ICE POP 12/PK</h3>
             <p>$35.00</p>
             <p>ICE POP 12/PK</p>
@@ -344,7 +331,7 @@
     <div id="about" class="about">
         <h2>Who We Are</h2>
         <p><b>We are a growing up company, that sells the most famous products on the market, on a cheaper price, by big quantities<b></p>
-        <img src="https://drinkprime.com/cdn/shop/files/PRIME_ICE_-_Grouped_Bottles_V2_800x.png?v=1736355512" alt="WWA">
+        <img src="https://drinkprime.com/cdn/shop/files/PRIME_ICE_-_Grouped_Bottles_V2_800x.png?v=1736355512" alt="WWA" style="width: 400px; height: 400px;">
 
     <!-- Locations Section -->
     <div id="locations" class="locations">
@@ -353,19 +340,49 @@
             <ul>
                 <li>
                     <img src="https://cdn.carredartistes.com/products_images/prod_201259/f_50-x-50-cm-pigni-diana-50x50-no-name-401-21331-20230318-1-front-0.jpg" alt="Location 1">
-                    Los Angeles, California | Opened in 2008, Is the most known branch in the US
+                    Los Angeles, California | Opened in 2008, Is the most known branch in the US | <a href="https://www.google.com.mx/maps/@33.9426453,-118.2540775,3a,75y,328.27h,89.42t/data=!3m7!1e1!3m5!1snpKyDnkPC9hZeL91wcZu5w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0.5773929163868274%26panoid%3DnpKyDnkPC9hZeL91wcZu5w%26yaw%3D328.2741161677501!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDQwOC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">Click here</a> Visit Us!
                 </li>
                 <li>
                     <img src="https://cdn.britannica.com/16/216816-159-EFA19063/atlanta-skyline-georgia.jpg" alt="Location 2">
-                    Atlanta, Georgia | Opened in 2017, To expand our products to the other side of the country
+                    Atlanta, Georgia | Opened in 2017, To expand our products to the other side of the country | <a href="https://www.google.com.mx/maps/@33.7517068,-84.3890004,3a,75y,355.1h,77.92t/data=!3m7!1e1!3m5!1sA5dGCOpXLhV-el48Ogx2_Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D12.07819483523771%26panoid%3DA5dGCOpXLhV-el48Ogx2_Q%26yaw%3D355.09588230424686!7i13312!8i6656?entry=ttu&g_ep=EgoyMDI1MDQwOC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">Click here</a> Visit Us!
                 </li>
                 <li>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5lVIBsm8RGZVVTipynIleQWJ1FhVYhYKvgw&s" alt="Location 3">
-                    San Diego, California | Our most newer branch, opened in 2022, Helping us to expand south.
+                    San Diego, California | Our most newer branch, opened in 2022, Helping us to expand south. | <a href="https://www.google.com.mx/maps/@32.7116625,-117.1274501,3a,75y,44.56h,90t/data=!3m7!1e1!3m5!1sM77OtXtgw7jxClJtq3xz8w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DM77OtXtgw7jxClJtq3xz8w%26yaw%3D44.561954!7i13312!8i6656?entry=ttu&g_ep=EgoyMDI1MDQwOC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">Click here</a> Visit Us!
                 </li>
             </ul>
         </div>
     </div>
+
+     <!-- FaQ Section -->
+     <div id="FaQ" class="about">
+        <h2>FaQ Section</h2>
+        <p><b>-My order wasnt taken | Call +52 3335678754 To get a 24Hr Assistance<b></p>
+        <p><b>-I dont have an account | Dont worry, our store can be used without any accounts<b></p>
+        <p><b>-What type of cards do we accept | All type, VISA, MX, US, EU,<b></p>
+        <p><b>-Do I have warranty? | On a purchase of +50 Dls, you get a free warranty for delivering errors<b></p>
+        <p><b>-IF YOU HAVE MORE QUESTIONS CALL +52 3335678754 FOR FREE 24HR ASSISTANCE<b></p>
+
+    <!-- Redes Sociales -->
+<div class="social-media">
+    <a href="https://www.facebook.com" target="_blank">
+        <button class="social-button">
+            <img src="https://logopng.com.br/logos/facebook-13.png" alt="Facebook" style="width: 70px; height: 70px;">
+        </button>
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+        <button class="social-button">
+            <img src="https://clipart.info/images/ccovers/1516920567instagram-png-logo-transparent.png" alt="Instagram" style="width: 70px; height: 70px;">
+        </button>
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+        <button class="social-button">
+            <img src="https://toppng.com/uploads/preview/twitter-x-new-logo-symbol-png-11692479881mg8srkkgy5.webp" alt="Twitter" style="width: 70px; height: 70px;">
+        </button>
+    </a>
+    <p><b>HYDROMAX Social Networks<b></p>
+    </a>
+</div>
 
     <!-- Cart Section -->
     <div id="cart" class="cart">
@@ -376,6 +393,14 @@
         <p>Total: $<span id="total-price">0.00</span></p>
         <button onclick="checkout()">Proceed to Checkout</button>
     </div>
+
+    <!-- Terms Of Use -->
+    <div id="Terms Of Use" class="about">
+        By using this site, you agree to these terms. All products are subject to availability and price changes. Payment is required at checkout. 
+        Shipping times are estimates and may vary. Returns are accepted within [X] days if the product is unused. We are not responsible for any 
+        damages or delays caused by third parties. We may update these terms at any time. For questions, contact us.
+
+
 
     <!-- Checkout Form (Hidden by default) -->
     <div id="checkout-form" class="form-container" style="display: none;">
@@ -436,9 +461,8 @@
                 cart = []; // Empty the cart
                 updateCart();
             }
-
         }
-        
+
         function scrollToTop() {
             window.scrollTo(0, 0);
         }
